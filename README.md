@@ -1,3 +1,6 @@
 To run
 
-cordova run android
+    ```
+    cordova prepare
+    cordova run android
+    ```
