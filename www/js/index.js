@@ -34,8 +34,9 @@ var app = {
 
     share: function() {
 
-        window.plugins.socialsharing.shareWithOptions({ subject: "sharing", message: "sharing" }, function () {
+        window.plugins.socialsharing.shareWithOptions({ subject: "sharing", message: "sharing", files: ["www/bigfile.txt"] }, function () {
             console.log("Successfully shared");
+            _startScanning();
         }, function () {});
     },
 
